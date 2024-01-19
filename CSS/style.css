@@ -1,0 +1,139 @@
+.barlow-medium {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semibold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* WEBSITE */
+body {
+  width: 100%;
+  margin: 0;
+  min-height: 100svh;
+  font-size: 13px;
+  background: hsl(210, 46%, 95%);
+}
+
+.main {
+  display: grid;
+  grid-template: auto/375px;
+  justify-content: center;
+}
+
+.testimony {
+  margin: 2rem 0;
+  padding: 2em 3em 3em 3em;
+  border-radius: 10px;
+}
+.testimony__avatar {
+  display: inline-block;
+  border-radius: 50px;
+  height: 2.5em;
+  margin-right: 1rem;
+  border: solid 2px rgba(207, 207, 207, 0.5);
+}
+.testimony__name {
+  font-size: 0.8rem;
+  letter-spacing: 0.15ch;
+  display: inline-block;
+}
+.testimony .graduate {
+  color: hsl(0, 0%, 81%);
+  font-size: 0.75rem;
+  letter-spacing: initial;
+}
+.testimony__title {
+  padding-bottom: 1.25em;
+  font-size: 1.25rem;
+}
+.testimony__text {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+/* Atribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bg-violet {
+  background: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 90% 0%;
+}
+
+.bg-violet > .testimony__text {
+  color: hsl(0, 0%, 81%);
+}
+
+.bg-gray-blue {
+  background: hsl(219, 29%, 14%);
+  color: hsl(210, 46%, 95%);
+}
+
+.bg-gray-blue > .testimony__text {
+  color: hsl(0, 0%, 81%);
+}
+
+.bg-gray-black {
+  background: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-gray-black > .testimony__text {
+  color: hsl(0, 0%, 81%);
+}
+
+.bg-white {
+  background: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+
+.bg-white > .testimony__text {
+  color: gray;
+}
+
+.wrap-img-name {
+  display: flex;
+  padding-bottom: 1.5em;
+}/*# sourceMappingURL=style.css.map */

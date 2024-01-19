@@ -1,0 +1,155 @@
+// VARIABLES
+$color-moderate-violet: hsl(263, 55%, 52%);
+$color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+$color-very-dark-blackish-blue: hsl(219, 29%, 14%);
+$color-white: hsl(0, 0%, 100%);
+$color-light-gray-blue: hsl(210, 46%, 95%);
+$color-light-gray: hsl(0, 0%, 81%);
+
+// FONTS
+
+.barlow-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+// CSS - RESET
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+/* WEBSITE */
+
+body {
+    width: 100%;
+    margin: 0;
+    min-height: 100svh;
+    font-size: 13px;
+    background: $color-light-gray-blue;
+}
+
+.main {
+    display: grid;
+    grid-template: auto / 375px;
+    justify-content: center;
+}
+
+.testimony {
+    margin: 2rem 0;
+    padding: 2em 3em 3em 3em;
+    border-radius: 10px;
+
+    &__avatar {
+        display: inline-block;
+        border-radius: 50px;
+        height: 2.5em;
+        margin-right: 1rem;
+        border: solid 2px rgba(207, 207, 207, 0.5); //$color-light-gray converted to RGBA for opacity
+    }
+
+    &__name {
+        font-size: 0.8rem;
+        letter-spacing: 0.15ch;
+        display: inline-block;
+    }
+
+    .graduate {
+        color: $color-light-gray;
+        font-size: 0.75rem;
+        letter-spacing: initial;
+    }
+
+    &__title {
+        padding-bottom: 1.25em;
+        font-size: 1.25rem;
+    }
+    &__text {
+        color: $color-very-dark-grayish-blue;
+        font-size: 0.86rem;
+        line-height: 1.5;
+    }
+}
+
+/* Atribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    & a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+// Background color setters with text colors alinged to contrast the backgrounds grouped for easier maintenance
+
+.bg-violet {
+    background: $color-moderate-violet;
+    color: $color-white;
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 90% 0%;
+}
+
+.bg-violet > .testimony__text {
+    color: $color-light-gray;
+}
+
+.bg-gray-blue {
+    background: $color-very-dark-blackish-blue;
+    color: $color-light-gray-blue;
+}
+.bg-gray-blue > .testimony__text {
+    color: $color-light-gray;
+}
+
+.bg-gray-black {
+    background: $color-very-dark-grayish-blue;
+    color: $color-white;
+}
+.bg-gray-black > .testimony__text {
+    color: $color-light-gray;
+}
+
+.bg-white {
+    background: $color-white;
+    color: $color-very-dark-grayish-blue;
+}
+.bg-white > .testimony__text {
+    color: gray;
+}
+
+.wrap-img-name {
+    display: flex;
+    padding-bottom: 1.5em;
+}
